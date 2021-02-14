@@ -14,10 +14,6 @@
  */
 package com.amazon.android.navigator;
 
-import com.amazon.android.interfaces.IActivityTransition;
-import com.amazon.utils.StringManipulation;
-import com.amazon.utils.ds.Graph;
-
 import android.app.Activity;
 import android.app.Application;
 import android.content.ComponentName;
@@ -25,6 +21,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+
+import com.amazon.android.interfaces.IActivityTransition;
+import com.amazon.utils.StringManipulation;
+import com.amazon.utils.ds.Graph;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -34,17 +34,17 @@ import java.util.Map;
 /**
  * Navigator class that tracks activity life cycle
  */
-public class Navigator implements Application.ActivityLifecycleCallbacks {
+public class Navigator_orig implements Application.ActivityLifecycleCallbacks {
 
     /**
      * Debug TAG.
      */
-    private static final String TAG = Navigator.class.getSimpleName();
+    private static final String TAG = Navigator_orig.class.getSimpleName();
 
     /**
      * Navigator file name.
      */
-    public static final String NAVIGATOR_FILE = "Navigator_pccmedia.json";
+    public static final String NAVIGATOR_FILE = "Navigator.json";
 
     /**
      * Context.
@@ -133,12 +133,12 @@ public class Navigator implements Application.ActivityLifecycleCallbacks {
      *
      * @param activity The active activity.
      */
-    public Navigator(Activity activity) {
+    public Navigator_orig(Activity activity) {
 
         this(activity, NAVIGATOR_FILE);
     }
 
-    public Navigator(Activity activity, String navigatorFilePath) {
+    public Navigator_orig(Activity activity, String navigatorFilePath) {
 
         mCurrentActivity = activity;
         mContext = activity.getApplicationContext();

@@ -1,0 +1,16 @@
+{
+  "cooker": "DynamicParser",
+  "matchList": [
+    "title@mTitle",
+    "description@mDescription",
+    "id@mId",
+    "videoURL@mUrl",
+    "imgURL@mCardImageUrl",
+    "imgURL@mBackgroundImageUrl"
+  ],
+  "format": "json",
+  "model": "com.amazon.android.model.content.Content",
+  "modelType": "array",
+  "translator": "ContentTranslator",
+  "query": "$[?(@.categories[0] in [$$par0$$])]"
+}
