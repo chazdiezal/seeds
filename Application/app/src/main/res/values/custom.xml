@@ -71,7 +71,7 @@ permissions and limitations under the License.
     <!-- Company logo -->
     <drawable name="company_logo">@drawable/gppcc_logo</drawable>
     <!-- App icon -->
-    <drawable name="app_logo">@mipmap/ic_launcher</drawable>
+    <drawable name="app_logo">@mipmap/ic_launcher_gppcc</drawable>
     <!-- App banner. Note: Used for Google Play Store -->
     <drawable name="app_banner">@drawable/placeholder_banner</drawable>
     <!-- Content preview window customization -->
