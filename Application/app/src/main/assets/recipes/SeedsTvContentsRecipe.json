@@ -6,7 +6,8 @@
     "id@mId",
     "videoURL@mUrl",
     "imgURL@mCardImageUrl",
-    "imgURL@mBackgroundImageUrl"
+    "imgURL@mBackgroundImageUrl",
+    "tags@mTags"
   ],
   "format": "json",
   "model": "com.amazon.android.model.content.Content",

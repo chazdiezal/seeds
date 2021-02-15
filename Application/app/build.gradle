@@ -41,7 +41,7 @@ android {
     buildToolsVersion "28.0.3"
 
     defaultConfig {
-        applicationId "com.fireappbuilder.android.calypso"
+        applicationId "com.fireappbuilder.android.seedstv"
         minSdkVersion 21
         targetSdkVersion 25
         versionCode 10
@@ -80,6 +80,7 @@ android {
 }
 
 dependencies {
+    implementation files('libs\\in-app-purchasing-2.0.76.jar')
     compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile 'junit:junit:4.12'
     androidTestCompile 'org.mockito:mockito-core:1.9.5'
